@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"23-wwdg\startup_stm32f103xb.o"
+"23-wwdg\main.o"
+"23-wwdg\gpio.o"
+"23-wwdg\wwdg.o"
+"23-wwdg\stm32f1xx_it.o"
+"23-wwdg\stm32f1xx_hal_msp.o"
+"23-wwdg\stm32f1xx_hal_gpio_ex.o"
+"23-wwdg\stm32f1xx_hal_tim.o"
+"23-wwdg\stm32f1xx_hal_tim_ex.o"
+"23-wwdg\stm32f1xx_hal_wwdg.o"
+"23-wwdg\stm32f1xx_hal.o"
+"23-wwdg\stm32f1xx_hal_rcc.o"
+"23-wwdg\stm32f1xx_hal_rcc_ex.o"
+"23-wwdg\stm32f1xx_hal_gpio.o"
+"23-wwdg\stm32f1xx_hal_dma.o"
+"23-wwdg\stm32f1xx_hal_cortex.o"
+"23-wwdg\stm32f1xx_hal_pwr.o"
+"23-wwdg\stm32f1xx_hal_flash.o"
+"23-wwdg\stm32f1xx_hal_flash_ex.o"
+"23-wwdg\stm32f1xx_hal_exti.o"
+"23-wwdg\system_stm32f1xx.o"
+--strict --scatter "23-wwdg\23-wwdg.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "23-wwdg.map" -o 23-wwdg\23-wwdg.axf

@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"25-pwr-sleep\startup_stm32f103xb.o"
+"25-pwr-sleep\main.o"
+"25-pwr-sleep\gpio.o"
+"25-pwr-sleep\dma.o"
+"25-pwr-sleep\usart.o"
+"25-pwr-sleep\stm32f1xx_it.o"
+"25-pwr-sleep\stm32f1xx_hal_msp.o"
+"25-pwr-sleep\stm32f1xx_hal_gpio_ex.o"
+"25-pwr-sleep\stm32f1xx_hal_tim.o"
+"25-pwr-sleep\stm32f1xx_hal_tim_ex.o"
+"25-pwr-sleep\stm32f1xx_hal_uart.o"
+"25-pwr-sleep\stm32f1xx_hal.o"
+"25-pwr-sleep\stm32f1xx_hal_rcc.o"
+"25-pwr-sleep\stm32f1xx_hal_rcc_ex.o"
+"25-pwr-sleep\stm32f1xx_hal_gpio.o"
+"25-pwr-sleep\stm32f1xx_hal_dma.o"
+"25-pwr-sleep\stm32f1xx_hal_cortex.o"
+"25-pwr-sleep\stm32f1xx_hal_pwr.o"
+"25-pwr-sleep\stm32f1xx_hal_flash.o"
+"25-pwr-sleep\stm32f1xx_hal_flash_ex.o"
+"25-pwr-sleep\stm32f1xx_hal_exti.o"
+"25-pwr-sleep\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "25-pwr-sleep\25-pwr-sleep.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "25-pwr-sleep.map" -o 25-pwr-sleep\25-pwr-sleep.axf

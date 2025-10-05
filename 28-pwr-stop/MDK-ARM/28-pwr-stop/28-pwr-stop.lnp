@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"28-pwr-stop\startup_stm32f103xb.o"
+"28-pwr-stop\main.o"
+"28-pwr-stop\gpio.o"
+"28-pwr-stop\dma.o"
+"28-pwr-stop\usart.o"
+"28-pwr-stop\stm32f1xx_it.o"
+"28-pwr-stop\stm32f1xx_hal_msp.o"
+"28-pwr-stop\stm32f1xx_hal_gpio_ex.o"
+"28-pwr-stop\stm32f1xx_hal_tim.o"
+"28-pwr-stop\stm32f1xx_hal_tim_ex.o"
+"28-pwr-stop\stm32f1xx_hal_uart.o"
+"28-pwr-stop\stm32f1xx_hal.o"
+"28-pwr-stop\stm32f1xx_hal_rcc.o"
+"28-pwr-stop\stm32f1xx_hal_rcc_ex.o"
+"28-pwr-stop\stm32f1xx_hal_gpio.o"
+"28-pwr-stop\stm32f1xx_hal_dma.o"
+"28-pwr-stop\stm32f1xx_hal_cortex.o"
+"28-pwr-stop\stm32f1xx_hal_pwr.o"
+"28-pwr-stop\stm32f1xx_hal_flash.o"
+"28-pwr-stop\stm32f1xx_hal_flash_ex.o"
+"28-pwr-stop\stm32f1xx_hal_exti.o"
+"28-pwr-stop\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "28-pwr-stop\28-pwr-stop.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "28-pwr-stop.map" -o 28-pwr-stop\28-pwr-stop.axf

@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"tst\startup_stm32f103xb.o"
+"tst\main.o"
+"tst\stm32f1xx_it.o"
+"tst\stm32f1xx_hal_msp.o"
+"tst\stm32f1xx_hal_gpio_ex.o"
+"tst\stm32f1xx_hal_tim.o"
+"tst\stm32f1xx_hal_tim_ex.o"
+"tst\stm32f1xx_hal_uart.o"
+"tst\stm32f1xx_hal.o"
+"tst\stm32f1xx_hal_rcc.o"
+"tst\stm32f1xx_hal_rcc_ex.o"
+"tst\stm32f1xx_hal_gpio.o"
+"tst\stm32f1xx_hal_dma.o"
+"tst\stm32f1xx_hal_cortex.o"
+"tst\stm32f1xx_hal_pwr.o"
+"tst\stm32f1xx_hal_flash.o"
+"tst\stm32f1xx_hal_flash_ex.o"
+"tst\stm32f1xx_hal_exti.o"
+"tst\system_stm32f1xx.o"
+--strict --scatter "TST\TST.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TST.map" -o TST\TST.axf

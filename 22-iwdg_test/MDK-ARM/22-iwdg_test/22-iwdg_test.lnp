@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"22-iwdg_test\startup_stm32f103xb.o"
+"22-iwdg_test\main.o"
+"22-iwdg_test\gpio.o"
+"22-iwdg_test\iwdg.o"
+"22-iwdg_test\stm32f1xx_it.o"
+"22-iwdg_test\stm32f1xx_hal_msp.o"
+"22-iwdg_test\stm32f1xx_hal_gpio_ex.o"
+"22-iwdg_test\stm32f1xx_hal_iwdg.o"
+"22-iwdg_test\stm32f1xx_hal.o"
+"22-iwdg_test\stm32f1xx_hal_rcc.o"
+"22-iwdg_test\stm32f1xx_hal_rcc_ex.o"
+"22-iwdg_test\stm32f1xx_hal_gpio.o"
+"22-iwdg_test\stm32f1xx_hal_dma.o"
+"22-iwdg_test\stm32f1xx_hal_cortex.o"
+"22-iwdg_test\stm32f1xx_hal_pwr.o"
+"22-iwdg_test\stm32f1xx_hal_flash.o"
+"22-iwdg_test\stm32f1xx_hal_flash_ex.o"
+"22-iwdg_test\stm32f1xx_hal_exti.o"
+"22-iwdg_test\stm32f1xx_hal_tim.o"
+"22-iwdg_test\stm32f1xx_hal_tim_ex.o"
+"22-iwdg_test\system_stm32f1xx.o"
+--strict --scatter "22-iwdg_test\22-iwdg_test.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "22-iwdg_test.map" -o 22-iwdg_test\22-iwdg_test.axf

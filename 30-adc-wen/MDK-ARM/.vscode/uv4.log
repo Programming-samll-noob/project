@@ -1,0 +1,17 @@
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target '29-adc-vr'
+compiling adc.c...
+../Core/Src/adc.c(111): warning:  #223-D: function "OLED_ShowStr" declared implicitly
+    OLED_ShowStr(16, 0, (unsigned char *)"ADC CPU Test", 2);
+../Core/Src/adc.c(110): warning:  #177-D: variable "str"  was declared but never referenced
+    uint8_t str[32] = {0};
+../Core/Src/adc.c: 2 warnings, 0 errors
+compiling main.c...
+linking...
+29-adc-vr\29-adc-vr.axf: Error: L6218E: Undefined symbol OLED_ShowStr (referred from adc.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+"29-adc-vr\29-adc-vr.axf" - 1 Error(s), 2 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:02

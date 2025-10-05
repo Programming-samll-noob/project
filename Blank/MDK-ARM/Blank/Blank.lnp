@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"blank\startup_stm32f103xb.o"
+"blank\main.o"
+"blank\stm32f1xx_it.o"
+"blank\stm32f1xx_hal_msp.o"
+"blank\stm32f1xx_hal_gpio_ex.o"
+"blank\stm32f1xx_hal_tim.o"
+"blank\stm32f1xx_hal_tim_ex.o"
+"blank\stm32f1xx_hal.o"
+"blank\stm32f1xx_hal_rcc.o"
+"blank\stm32f1xx_hal_rcc_ex.o"
+"blank\stm32f1xx_hal_gpio.o"
+"blank\stm32f1xx_hal_dma.o"
+"blank\stm32f1xx_hal_cortex.o"
+"blank\stm32f1xx_hal_pwr.o"
+"blank\stm32f1xx_hal_flash.o"
+"blank\stm32f1xx_hal_flash_ex.o"
+"blank\stm32f1xx_hal_exti.o"
+"blank\system_stm32f1xx.o"
+--strict --scatter "Blank\Blank.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Blank.map" -o Blank\Blank.axf

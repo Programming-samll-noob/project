@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"11-pwm\startup_stm32f103xb.o"
+"11-pwm\main.o"
+"11-pwm\gpio.o"
+"11-pwm\tim.o"
+"11-pwm\stm32f1xx_it.o"
+"11-pwm\stm32f1xx_hal_msp.o"
+"11-pwm\stm32f1xx_hal_gpio_ex.o"
+"11-pwm\stm32f1xx_hal_tim.o"
+"11-pwm\stm32f1xx_hal_tim_ex.o"
+"11-pwm\stm32f1xx_hal.o"
+"11-pwm\stm32f1xx_hal_rcc.o"
+"11-pwm\stm32f1xx_hal_rcc_ex.o"
+"11-pwm\stm32f1xx_hal_gpio.o"
+"11-pwm\stm32f1xx_hal_dma.o"
+"11-pwm\stm32f1xx_hal_cortex.o"
+"11-pwm\stm32f1xx_hal_pwr.o"
+"11-pwm\stm32f1xx_hal_flash.o"
+"11-pwm\stm32f1xx_hal_flash_ex.o"
+"11-pwm\stm32f1xx_hal_exti.o"
+"11-pwm\system_stm32f1xx.o"
+--strict --scatter "11-PWM\11-PWM.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "11-PWM.map" -o 11-PWM\11-PWM.axf
